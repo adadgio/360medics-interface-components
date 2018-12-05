@@ -4,8 +4,10 @@
   "description": "360medics Interface component for front end",
   "main": "index.js",
   "scripts": {
+    "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "build-css": "node-sass --include-path scss scss/main.scss dist/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -26,9 +28,10 @@
   },
   "devDependencies": {
     "node-sass": "^4.10.0",
+    "nodemon": "^1.18.7",
     "sass-loader": "^7.1.0",
     "typescript": "^3.2.1",
     "webpack": "^4.27.0"
   },
-  "typings": "./360medics-intnerface-component.d.ts"
+  "typings": "./360medics-interface-component.d.ts"
 }
