@@ -7,7 +7,7 @@
     "build": "npm run build-css && tsc",
     "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm run build-css && tsc && npm version patch && npm publish",
+    "publishit": "npm run build-css && tsc && npm version patch && npm publish",
     "build-css": "node-sass --include-path scss scss/main.scss dist/css/main.css"
   },
   "repository": {

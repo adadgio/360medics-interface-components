@@ -5,5 +5,5 @@ npm run watch
 ```
 
 ```
-npm run publish
+npm run publishit
 ```
