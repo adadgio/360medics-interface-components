@@ -10,7 +10,7 @@
         "declaration": true
     },
     "files": [
-        "360medics-interface-components.ts"
+        "index.ts"
     ],
     "exclude": [
         "node_modules"

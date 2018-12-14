@@ -1,9 +1,10 @@
 {
   "name": "360medics-interface-components",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "360medics Interface component for front end",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
+    "build": "npm run build-css && tsc",
     "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "tsc",
@@ -24,7 +25,13 @@
   },
   "homepage": "https://github.com/adadgio/360medics-interface-components#readme",
   "dependencies": {
-    "angular2": "^2.0.0-beta.21"
+    "@angular/animations": "^5.2.0",
+    "@angular/cdk": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "node-sass": "^4.10.0",
