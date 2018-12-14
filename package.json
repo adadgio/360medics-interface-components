@@ -4,11 +4,13 @@
   "description": "360medics Interface component for front end",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "npm run build-css && tsc",
+    "build": "npm run build-css && tsc && npm run htmlcopy && npm run sasscopy",
     "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "publishit": "npm run build-css && tsc && npm version patch && npm publish",
-    "build-css": "node-sass --include-path scss scss/main.scss dist/css/main.css"
+    "build-css": "node-sass --include-path scss src/scss/main.scss dist/css/main.css",
+    "htmlcopy": "copyfiles --up 1 src/**/*.html dist",
+    "sasscopy": "copyfiles --up 1 src/**/*.sass dist"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
+    "copyfiles": "^2.1.0",
     "node-sass": "^4.10.0",
     "nodemon": "^1.18.7",
     "sass-loader": "^7.1.0",
